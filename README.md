@@ -4,6 +4,8 @@ This project includes a working example on how to setup and run a service to ser
 ## Content
 * Preconditions
 * Multitenant SetUp
+![Client Secret model](images/image1.png)
+![Maganed identity model](images/image2.png)
 ** Create main App in Tenant A
 ** Authorized main App in Tenant B
 * Terraform Deployments enabling MI
