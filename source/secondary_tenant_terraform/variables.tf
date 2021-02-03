@@ -1,17 +1,3 @@
-# AzureAD provider variables
-variable "mainAppId" {
-  type        = string
-  description = "Id for Main API - Known after first terraform apply"
-  default     = "00000000-0000-0000-0000-000000000000"
-}
-
-variable "app_role_id" {
-  type        = string
-  description = "Main App Role ID - Known after first terraform apply"
-  default     = "00000000-0000-0000-0000-000000000000"
-}
-
-# Azure Providers
 
 # General
 variable "resource_group_name" {
@@ -77,16 +63,12 @@ variable "storage_account_enable_hns" {
 }
 
 # App Service Plan Variables
-variable "primary_app_service_plan_name"{
+variable "secondary_app_service_plan_name"{
     description = "App Service Plan name"
 }
 
 variable azure_insights_name{
     description = "App Insights name"
-}
-
-variable azure_app_service_name{
-  description = "Primray Web App"
 }
 
 #Resource Deployment Properties
@@ -168,4 +150,3 @@ variable "os_type" {
   description = ""
   default     = "linux"
 }
-
